@@ -3,7 +3,6 @@
 
 I created an imdb clone wih react, you can see the latest, upcoming movies and on clicking any movie will show the detail page of the movie.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
 
 
