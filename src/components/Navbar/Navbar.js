@@ -6,10 +6,10 @@ import {  LinkContainer }  from 'react-router-bootstrap'
 
 
 export const Navbar1 = ()=> {
-  const pathname = window.location.pathname;
+
 return (
     <>
-        <Navbar expand= 'lg' bg = 'dark' variant = 'dark' p-lg = '15'>
+        <Navbar expand= 'lg md' bg = 'dark' variant = 'dark' p-lg-4>
             <Container>
                 <LinkContainer to= '/'>
                 <Navbar.Brand>
@@ -36,22 +36,7 @@ return (
             </LinkContainer>
 
             </NavDropdown>
-
-                 { pathname === '/series' ?
-                 <>
-                 <LinkContainer to = '/series/popular'>
-                  <Nav.Link>Popular</Nav.Link>
-                  </LinkContainer>
-
-                  <LinkContainer to = '/series/binge-worthy'>
-                  <Nav.Link>Binge-Worthy</Nav.Link>
-                  </LinkContainer>
-
-                  <LinkContainer to = '/series/new-in'>
-                  <Nav.Link>New In</Nav.Link>
-                  </LinkContainer>
-                  </> : <>
-                   <LinkContainer to = '/movies/popular'>
+            <LinkContainer to = '/movies/popular'>
                     <Nav.Link>Popular</Nav.Link>
                     </LinkContainer>
   
@@ -62,10 +47,7 @@ return (
                     <LinkContainer to = '/movies/new-in'>
                     <Nav.Link>New In</Nav.Link>
                     </LinkContainer>
-                    </>
-                   }                    
-                    
-                    
+    
                 </Nav>
             </Container>
         </Navbar>

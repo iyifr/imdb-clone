@@ -4,31 +4,24 @@ import { Navbar1 } from './components/Navbar/Navbar';
 import Home from './components/Homepage/Home';
 import MovieList from './components/Movies/MovieList'
 import SeriesList from './components/Series/SeriesList'
-import SeriesDetails from './components/Series/SeriesDetails';
-import axios from 'axios';
+import SeriesDetails from './components/Series/SeriesDetails'
 import {BrowserRouter as Router , Routes, Route} from 'react-router-dom'
 import MovieDetails from './components/Movies/MovieDetail';
 
 
 function App() {
-  {/*const [data , setData] = useState([]);
-
-
-  useEffect(() => {
-    axios.get('').then((response)=> {
-
-    })
-  }, [])
-*/}
+  
   return (
     <Router> 
         <Navbar1 />
         <Routes>
           <Route path = '/' element = {<Home />} />
-          <Route path = '/movies/:id' element = {<MovieList />} />
-          <Route path = '/movies/:type' element = {<MovieDetails />} />
+          <Route path = '/movies/:type' element = {<MovieList />} />
+          <Route path = '/movies' element = {<MovieList />} />
+          <Route path = '/movies/:id' element = {<MovieDetails />} />
+          <Route path = '/series/:type' element = {<SeriesList />} />
           <Route path = '/series' element = {<SeriesList />} />
-          <Route path = '/series/:type' element = {<SeriesDetails />} />
+          <Route path = '/series/:id' element = {<SeriesDetails />} />
         </Routes>
 
     </Router>
