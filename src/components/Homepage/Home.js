@@ -10,15 +10,17 @@ const HomePage = ()=> {
 
   useEffect(() => {
     axios.get('https://api.themoviedb.org/3/movie/popular?api_key=3f70f3effc381814fe3dc447d15bb5c6&language=en-US&page=1').then(
-        (response)=> { console.log(response.data.results)
-
-    })
+        (response)=> { 
+            const filmInfo = response.data.results;
+            setmovieData(filmInfo)
+        }
+        )
   }, [])
 
  return (
         <>
         HomePage
-        <MovieList />
+        <MovieList data = {movieData} />
         <SeriesList />
         </>
     )
