@@ -9,7 +9,7 @@ export const Navbar1 = ()=> {
 
 return (
     <>
-        <Navbar fixed = 'top' bg = 'dark' variant = 'dark' expand = 'lg'>
+        <Navbar fixed = 'top' bg = 'dark' variant = 'dark' expand = 'lg md'>
             <Container>
                 <LinkContainer to= '/'>
                 <Navbar.Brand>

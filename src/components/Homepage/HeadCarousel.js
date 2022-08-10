@@ -4,16 +4,16 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function Homecarousel({info}) {
   return (
-    <Carousel controls = {true} interval = {500}>
-      <Carousel.Item interval = {200}>
+    <Carousel controls = {false}>
+      <Carousel.Item>
         <img
           className="d-block w-100"
           src= "https://img.freepik.com/free-vector/black-wide-banner-with-shadow-lines-design_1017-34216.jpg?w=2000"
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>some filler text</p>
+          <h3 style = {{textAlign: "left"}}>First slide label</h3>
+          <p style = {{textAlign: "left"}}>Some filler text</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
