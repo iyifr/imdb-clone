@@ -23,7 +23,7 @@ const HomePage = ()=> {
         <>
         <div className= 'home'>
             <Homecarousel info = {movieData}/>
-            <MovieList data = {movieData} />
+            <MovieList data = {movieData}/>
             <SeriesList />
        </div>
         </>

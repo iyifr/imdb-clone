@@ -1,11 +1,12 @@
 body {
-    margin : 8px;
     margin-top : 32px;
+    color: white;
+    background-color: rgba(54, 45, 54, 0.7);
+
 }
 
 .home {
-    background-color: inherit;
-    padding : 8px;
-    margin-top: calc(12vh + 25px);
+    padding : 4px;
+    margin-top: calc(12.5vh + 32px);
     height : 95vh;
 }

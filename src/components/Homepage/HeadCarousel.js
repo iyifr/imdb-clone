@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
 
-function Homecarousel() {
+function Homecarousel({info}) {
   return (
     <Carousel controls = {true} interval = {500}>
       <Carousel.Item interval = {200}>
