@@ -7,6 +7,7 @@ import SeriesList from './components/Series/SeriesList'
 import SeriesDetails from './components/Series/SeriesDetails'
 import {BrowserRouter as Router , Routes, Route} from 'react-router-dom'
 import MovieDetails from './components/Movies/MovieDetail';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
