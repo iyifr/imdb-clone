@@ -1,0 +1,11 @@
+body {
+    margin : 8px;
+    margin-top : 32px;
+}
+
+.home {
+    background-color: inherit;
+    padding : 8px;
+    margin-top: calc(12vh + 25px);
+    height : 95vh;
+}

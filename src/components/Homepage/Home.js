@@ -1,7 +1,9 @@
 import React, { useState, useEffect} from 'react' ;
 import MovieList from '../Movies/MovieList'
 import SeriesList from '../Series/SeriesList';
+import Homecarousel from './/HeadCarousel';
 import axios from 'axios';
+import './/home.css';
 
 
 const HomePage = ()=> {
@@ -19,9 +21,11 @@ const HomePage = ()=> {
 
  return (
         <>
-        HomePage
-        <MovieList data = {movieData} />
-        <SeriesList />
+        <div className= 'home'>
+            <Homecarousel info = {movieData}/>
+            <MovieList data = {movieData} />
+            <SeriesList />
+       </div>
         </>
     )
 

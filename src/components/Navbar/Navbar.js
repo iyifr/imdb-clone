@@ -9,7 +9,7 @@ export const Navbar1 = ()=> {
 
 return (
     <>
-        <Navbar expand= 'lg md' bg = 'dark' variant = 'dark' p-lg-4>
+        <Navbar fixed = 'top' bg = 'dark' variant = 'dark' expand = 'lg'>
             <Container>
                 <LinkContainer to= '/'>
                 <Navbar.Brand>
@@ -21,6 +21,8 @@ return (
                     className= 'd-inline-block align-top me-left' />
                 </Navbar.Brand>
                 </LinkContainer>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className = 'me-auto'>
                 <NavDropdown
               id="nav-dropdown-dark-example"
@@ -49,6 +51,7 @@ return (
                     </LinkContainer>
     
                 </Nav>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
     </>
