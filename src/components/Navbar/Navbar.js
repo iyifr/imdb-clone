@@ -2,7 +2,6 @@ import React from 'react' ;
 import Container from 'react-bootstrap/Container'
 import  Nav  from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavDropdown'
 import {  LinkContainer }  from 'react-router-bootstrap'
 
 
@@ -23,35 +22,24 @@ return (
                     className= 'd-inline-block align-top me-left' />
                 </Navbar.Brand>
                 </LinkContainer>
+
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
+
                 <Nav className = 'me-auto'>
-                <NavDropdown
-              id="nav-dropdown-dark-example"
-              title="Categories"
-              menuVariant="dark"
-            >
-            <LinkContainer to = "/movies">
-              <NavDropdown.Item> Movies</NavDropdown.Item>
-            </LinkContainer>
 
-            <LinkContainer to = "/series">
-              <NavDropdown.Item>TV series</NavDropdown.Item>
-            </LinkContainer>
-
-            </NavDropdown>
-            <LinkContainer to = '/movies/popular'>
-                    <Nav.Link>Popular</Nav.Link>
-                    </LinkContainer>
+                  <LinkContainer to = '/movies/popular'>
+                        <Nav.Link>Popular</Nav.Link>
+                  </LinkContainer>
   
-                    <LinkContainer to = '/movies/top-rated'>
+                  <LinkContainer to = '/movies/top-rated'>
                     <Nav.Link>Top Rated</Nav.Link>
-                    </LinkContainer>
+                  </LinkContainer>
   
-                    <LinkContainer to = '/movies/new-in'>
+                  <LinkContainer to = '/movies/new-in'>
                     <Nav.Link>New In</Nav.Link>
-                    </LinkContainer>
-    
+                  </LinkContainer>
+  
                 </Nav>
                 </Navbar.Collapse>
             </Container>

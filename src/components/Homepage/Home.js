@@ -22,10 +22,13 @@ const HomePage = ()=> {
  return (
         <>
         <div className= 'home'>
-            <Homecarousel info = {movieData}/>
-            <MovieList data = {movieData}/>
-            <SeriesList />
+            <Homecarousel items = {movieData}/>
        </div>
+
+        <div>
+        <MovieList/>
+        <SeriesList />
+        </div>
         </>
     )
 
