@@ -1,7 +1,7 @@
-import React , {useState, useEffect} from 'react'
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar1 } from './components/Navbar/Navbar';
-import Home from './components/Homepage/Home';
+import Homepage from './components/Homepage/Home';
 import MovieList from './components/Movies/MovieList'
 import SeriesList from './components/Series/SeriesList'
 import SeriesDetails from './components/Series/SeriesDetails'
@@ -16,7 +16,7 @@ function App() {
     <Router> 
         <Navbar1 />
         <Routes>
-          <Route path = '/' element = {<Home />} />
+          <Route path = '/' element = {<Homepage />} />
           <Route path = '/movies/:type' element = {<MovieList />} />
           <Route path = '/movies/:id' element = {<MovieDetails />} />
           <Route path = '/series/:type' element = {<SeriesList />} />

@@ -1,6 +1,6 @@
 import React from 'react'
-
-const MovieList = ()=> {
+import './/moviepage.css'
+const MovieList = () => {
     return (
         <>
         <h1> Movie List </h1>

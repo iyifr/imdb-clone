@@ -1,19 +1,60 @@
 body {
     margin-top : 32px;
-    color: rgb(2, 5, 17);
-    background-color: rgb(109, 106, 65);
+    color:  rgba(233, 224, 224,0.9);
+    background-color:rgb(2, 5, 17);
 
 }
 
 .home {
-    padding : 0px;
-    margin: calc(12vh + 6px) 0 30px 0px;
-    max-width: 100%;
-    min-height : 25vh;
+    margin-top: calc(12vh + 6px);
+    height: 600px;
 }
 
-.posterImage img {
-    height: calc(100% - 5vh);
-    max-width: inherit;
+.Imagebox {
+    height: 600px;
+}
 
+.Imagebox img {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+.overlay{
+    height: 70%;
+    bottom: 0px;
+    left:0px;
+    padding:5.5rem 5rem 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-left:0px;
+    width: 100%;
+    opacity: 0.9;
+    transition: opacity .3s;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+
+    margin-left: 0;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.overlay h3 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 0.4rem
+}
+
+
+.posterInfo {
+    font-style : 'italic';
+    font-size : 1.2rem;
+    width : 70%;
+    color : rgb(206, 195, 192);
+    line-height : 1.2;
+    font-weight : 650;
+    margin-top: 0.75rem;
+    margin-bottom: 0.2rem;
+    text-align: left;
 }
