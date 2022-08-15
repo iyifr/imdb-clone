@@ -36,8 +36,8 @@ return (
                     <Nav.Link>Top Rated</Nav.Link>
                   </LinkContainer>
   
-                  <LinkContainer to = '/movies/new-in'>
-                    <Nav.Link>New In</Nav.Link>
+                  <LinkContainer to = '/movies/upcoming'>
+                    <Nav.Link>Upcoming</Nav.Link>
                   </LinkContainer>
   
                 </Nav>

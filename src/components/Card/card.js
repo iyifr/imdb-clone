@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 import './/card.css';
 import {  LinkContainer }  from 'react-router-bootstrap'
 
 
-const Cards= ({movies}) => {
+const Card= ({movies}) => {
 const [isLoading , setIsLoading] = useState(true);
+const setTimeOut = ()=> null;
 
 useEffect(()=> {
     setTimeOut(() => {
@@ -16,24 +18,24 @@ useEffect(()=> {
 return <>
 {
     isLoading?
-    <div className = "cards">
+    <div className = "Card">
         <SkeletonTheme color = '#202020' highlightColor = '444'>
             <Skeleton height= {300} duration = {2} />
         </SkeletonTheme>
     </div>
     :
     <LinkContainer to = {`movie/${movies.id}`} style = {{textDecoration : 'none' , color : 'white'}} >
-        <div className = 'cards'>
-            <img className= 'cards__img' 
+        <div className = 'Card'>
+            <img className= 'card__img' 
             src = {`https://image.tmdb.org/t/p/original${movies?movies.poster_path:''}`}
              alt = "Movie picure" />
-            <div className ="Cards_overlay">
-                <div className = 'cards__title'>
+            <div className ="Card_overlay">
+                <div className = 'card__title'>
                     {movies?movies.original_title:''}
                 </div>
-                <div className = "cards_runtime">{movies?movies.original_title:''}</div>
-                <div className = 'cards_runtime'>{movies?movies.release_date:''}</div>
-                <div className = 'cards_description'>{movies?movies.overview:''}</div>
+                <div className = "card_runtime">{movies?movies.original_title:''}
+                </div>
+                <div className = 'card_description'>{movies?movies.overview.slice(0,118)+'...':''}</div>
             </div>
         </div>
     </LinkContainer>
@@ -42,4 +44,4 @@ return <>
 </>
 
 }
-export default Cards
+export default Card

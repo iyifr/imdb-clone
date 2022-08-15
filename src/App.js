@@ -5,7 +5,6 @@ import Homepage from './components/Homepage/Home';
 import MovieList from './components/Movies/MovieList'
 import {BrowserRouter as Router , Routes, Route} from 'react-router-dom'
 import MovieDetails from './components/Movies/MovieDetail';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
