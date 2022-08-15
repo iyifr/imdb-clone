@@ -48,13 +48,13 @@ body {
 
 
 .posterInfo {
-    font-style : 'italic';
-    font-size : 1.2rem;
-    width : 70%;
+    font-size : 1.1em;
+    width : 85%;
     color : rgb(206, 195, 192);
     line-height : 1.2;
-    font-weight : 650;
-    margin-top: 0.75rem;
+    font-weight : 500;
+    margin-top: 1.2rem;
     margin-bottom: 0.2rem;
     text-align: left;
 }
+
