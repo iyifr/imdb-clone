@@ -10,7 +10,7 @@ export const Navbar1 = ()=> {
 
 return (
     <>
-        <Navbar fixed = 'top' bg = 'dark' variant = 'dark' expand = 'lg md'>
+        <Navbar fixed = 'top' bg = 'dark' variant = 'dark' expand = 'lg'>
             <Container>
                 <LinkContainer to= '/'>
                 <Navbar.Brand>
@@ -37,7 +37,7 @@ return (
                   </LinkContainer>
   
                   <LinkContainer to = '/movies/upcoming'>
-                    <Nav.Link>Upcoming</Nav.Link>
+                    <Nav.Link>New in</Nav.Link>
                   </LinkContainer>
   
                 </Nav>

@@ -1,47 +1,56 @@
 .Card {
     display:inline-block;
     position: relative;
-    transition: transfrom .2s;
+    transition: transform 0.2s linear 0.5s;
     border-radius: 9px;
     overflow: hidden;
-    margin : 0.19rem;
+    margin : 0.3rem;
     cursor: pointer;
-    min-width: 200px;
+    max-width: 200px;
     z-index: 0;
     border: 1px solid rgb(99,99,99);
+    padding: 0;
 
 }
 
-.card:hover {
+.Card:hover {
     transform: scale(1.2);
     z-index: 1000;
     box-shadow : (rgba(0,0,0,0.25) 0px 54px 55px , rgba(0,0,0,0.12) 0px -12px 30px, rgba(0,0,0,0.12) 0px 4px 6px, rgba(0,0,0,0.17))
 }
 
 .card__img {
-    height: 300px
+    height: 300px;
+    object-fit: cover;
 }
 
-.card_overlay {
+.overlay1 {
     position: absolute;
-    padding: 0 1rem 1rem 1rem;
     bottom : 0px;
-    height: 290px;
-    display : flex;
+    max-height: 100px;
+    min-width: inherit;
+    right: 6px;
+    display : flex ;
     flex-direction : column;
-    width: 85%;
-    justify-content : flex-end;
-    opacity : 0;
-    transition: opacity .2s;
-    background-image: linear-gradient(rgb(0,0,0,0) , rgb(0,0,0,1))
+    justify-content : flex-start;
+    opacity : 0.8;
+    transition: opacity 0.1s;
+    background: linear-gradient(rgb(0,0,0,0) , rgb(0,0,0,1));
+    padding: 8px;
 }
 
-.cards_overlay {
-    opacity: 1
+.overlay1:hover {
+    opacity: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-.cards__title {
+.title {
     font-weight : 900;
     font-size : 1rem;
-    margin-bottom: 0.4rem;
+}
+
+.runtime {
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem
 }

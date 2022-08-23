@@ -7,7 +7,6 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 
 const MovieList = () => {
@@ -36,10 +35,8 @@ const MovieList = () => {
             <h2 className = 'list_title'> {type ? type : 'POPULAR'.toUpperCase()}</h2>
             <Container fluid="md">
             <Row className="justify-content-lg-center">
-                {movieList.map(movie=> (
-                    <Col lg = {2} sm ={4} xs={6}>
-                        <Card movies={movie} />
-                    </Col> 
+                {movieList.map(data=> (
+                <Card movies={data} id = {data.id} />
                 )
             )}
             </Row>
