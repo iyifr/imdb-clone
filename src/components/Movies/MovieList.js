@@ -7,6 +7,7 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Footer from '../Footer/Footer'
 
 
 const MovieList = () => {
@@ -32,7 +33,8 @@ const MovieList = () => {
 
     return <>
         <div className = "movie_list" >
-            <h2 className = 'list_title'> {type ? type : 'POPULAR'.toUpperCase()}</h2>
+        
+            <h2 className = 'list_title'> {type ? type : 'POPULAR'.toUpperCase() } </h2>
             <Container fluid="md">
             <Row className="justify-content-lg-center">
                 {movieList.map(data=> (
@@ -41,9 +43,9 @@ const MovieList = () => {
             )}
             </Row>
             </Container>
-
-
         </div>
+
+        <Footer />
     </>
 }
 

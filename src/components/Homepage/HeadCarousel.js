@@ -19,9 +19,9 @@ function Homecarousel({items}) {
             <h3 style = {{textAlign: "left"}}>{item ? item.original_title : ""}</h3>
             <div className= 'posterInfo'>
             <p>{item ? item.overview : ""}</p>
-            <p className = "text-muted"> Release Date : {item.release_date}</p>
+            <p> Release Date : {item.release_date}</p>
             <p>Avg. Rating - {item? item.vote_average : ''}</p>
-            </div>
+            </div> 
           </Carousel.Caption>
         </Carousel.Item>
 
