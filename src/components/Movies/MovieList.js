@@ -9,7 +9,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Footer from '../Footer/Footer'
 
-
 const MovieList = () => {
     const [movieList, setMovieList] = useState([])
     const {type} = useParams()
@@ -29,6 +28,8 @@ const MovieList = () => {
     useEffect(()=> {
         getData()
     }, [type])
+
+ 
 
 
     return <>

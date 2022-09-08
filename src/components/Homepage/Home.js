@@ -20,10 +20,11 @@ const HomePage = ()=> {
 
  return (
         <>
+
         <div className= 'home'>
             <Homecarousel items = {movieData}/>
        </div>
-
+       
         <MovieList/>
         </>
     )
