@@ -1,6 +1,4 @@
-import React, {useState, useEffect} from 'react'
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
-import 'react-loading-skeleton/dist/skeleton.css';
+import React from 'react'
 import './/card.css';
 import {  LinkContainer }  from 'react-router-bootstrap'
 

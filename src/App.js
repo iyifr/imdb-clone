@@ -13,12 +13,15 @@ function App() {
     <Router> 
         <Navbar1 />
         <Routes>
-          <Route path = '/' element = {<Homepage />} />
-          <Route path = '/movies/:type' element = {<MovieList />} />
-          <Route path = '/movies/:id' element = {<h1> MOVIESSSSS </h1>} />
+        
+          <Route exact path = '/' component = {<Homepage />} />
+          <Route path = '/movies/:type' component = {<MovieList />} />
+          <Route path = '/movies/:id' component = {<MovieDetails />} />
+          
         </Routes>
 
     </Router>
+    
   )
 }
 
