@@ -1,0 +1,144 @@
+/*mobile-design*/
+body {
+    margin-top: 1.8rem;
+    background: linear-gradient(to right , rgba(23, 40, 58, 0.7), rgba(11, 51, 92, 0.2)) ;
+}
+
+.home {
+    margin-top: calc(8vh + 18px);
+    height: 470px;
+}
+
+.Imagebox {
+    height: 460px;
+}
+
+.Imagebox img {
+    margin: auto;
+    display: block;
+    width: 100%;
+    min-height: 430px;
+    object-fit: cover;
+}
+
+
+.overlay{
+    height: 65%;
+    bottom: 0px;
+    left: 0px;
+    right: 5px;
+    padding: 4.5rem 3rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    margin-left:0px;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+    text-align: none;
+     margin-left: 0; 
+     overflow-y: auto;
+     overflow-x: none
+}
+
+.overlay h3 {
+    font-size: 1.6rem;
+    font-weight: 850;
+    margin-bottom: 0.2rem;
+}
+
+.posterInfo {
+    font-size : 0.85rem;
+    width : 80%;
+    color : rgb(236, 224, 220);
+    line-height : 1.2;
+    font-weight : 500;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    text-align: left;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    body {
+        margin-top : 32px;
+        color:  rgba(233, 224, 224,0.9);
+        background-color:rgb(2, 5, 17);
+    
+    }
+    
+    .home {
+        margin-top: calc(12vh + 4px);
+        height: 600px;
+    }
+    
+    .Imagebox {
+        height: 600px;
+    }
+    
+    .Imagebox img {
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+    
+    .overlay{
+        height: 70%;
+        bottom: 0px;
+        left:0px;
+        padding: 5.5rem 5rem 5rem 5rem;
+        display: flex;
+        flex-direction: column;
+        margin-left:0px;
+        width: 100%;
+        opacity: 0.9;
+        transition: opacity .3s;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+    
+        margin-left: 0;
+    }
+    
+    .overlay:hover{
+        opacity: 1;
+    }
+    
+    .posterInfo {
+        font-size : 1.1rem;
+        width : 85%;
+        color : rgb(247, 219, 212);
+        line-height : 1.2;
+        font-weight : 490;
+        margin-top: 1.2rem;
+        margin-bottom: 0.2rem;
+        text-align: left;
+    }
+
+}
+
+@media only screen and (min-width: 980px) {
+    .posterInfo {
+        font-size : 1.3rem;
+        width : 85%;
+        color : rgb(247, 219, 212);
+        line-height : 1.4;
+        font-weight : 530;
+        margin-top: 1.5rem;
+        margin-bottom: 0.2rem;
+        text-align: left;
+    }
+
+    .home {
+        margin-top: calc(8vh + 20px);
+        height: 680px;
+    }
+
+    .Imagebox {
+        height: 670px;
+    }
+
+    .overlay h3 {
+        font-size: 2rem;
+        font-weight: 850;
+        margin-bottom: 0.2rem;
+        margin-top: 8px;
+    }
+}

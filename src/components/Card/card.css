@@ -1,0 +1,105 @@
+
+@media only screen and (max-width: 768px) {
+    .Card {
+        display:flex;
+        flex-direction: row;
+        position: relative;
+        transition: transform .2s linear;
+        border-radius: 12px;
+        overflow: hidden;
+        margin : 0.1rem;
+        cursor: pointer;
+        max-width: 200px;
+        z-index: 0;
+        border: 1px solid rgb(99,99,99);
+        padding: 0;
+        min-height: 120px;
+        min-width: 100px;
+    
+    }
+
+    .card__img {
+        height: 170px;
+        object-fit: contain;
+    }
+
+    .overlay1 {
+        position: absolute;
+        bottom : 0px;
+        max-height: 60px;
+        min-width: inherit;
+        right: 1px;
+        display : flex ;
+        flex-direction : column;
+        justify-content : flex-start;
+        opacity : 0.8;
+        transition: opacity 0.1s;
+        background: linear-gradient(rgb(0,0,0,0) , rgb(0,0,0,1));
+        padding: 8px;
+        font-size: 0.45rem;
+    }
+
+}
+
+
+
+
+
+
+.Card {
+    display:inline-block;
+    position: relative;
+    transition: transform .2s linear;
+    border-radius: 9px;
+    overflow: hidden;
+    margin : 0.3rem;
+    cursor: pointer;
+    max-width: 200px;
+    z-index: 0;
+    border: 1px solid rgb(99,99,99);
+    padding: 0;
+
+}
+
+.Card:hover {
+    transform: scale(1.2);
+    z-index: 1000;
+    box-shadow : (rgba(0,0,0,0.25) 0px 54px 55px , rgba(0,0,0,0.12) 0px -12px 30px, rgba(0,0,0,0.12) 0px 4px 6px, rgba(0,0,0,0.17))
+}
+
+.card__img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.overlay1 {
+    position: absolute;
+    bottom : 0px;
+    max-height: 100px;
+    min-width: inherit;
+    right: 1px;
+    display : flex ;
+    flex-direction : column;
+    justify-content : flex-start;
+    opacity : 0.8;
+    transition: opacity 0.1s;
+    background: linear-gradient(rgb(0,0,0,0) , rgb(0,0,0,1));
+    padding: 8px;
+    font-size: 0.95rem;
+}
+
+.overlay1:hover {
+    opacity: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.title {
+    font-weight : 700;
+    font-size : 1rem;
+}
+
+.runtime {
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem
+} 

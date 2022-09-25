@@ -1,0 +1,16 @@
+.movieBanner {
+    margin-top: 64px;
+    background-color: rgb(6, 16, 29);
+    padding: 24px;
+}
+
+hr {
+    color : rgba(243, 236, 236, 0.5);
+    height: 8px;
+    width: 70%;
+    margin: auto
+}
+
+.bannerTitle h1 {
+       font-size : 2rem
+}

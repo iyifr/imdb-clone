@@ -1,0 +1,14 @@
+body {
+    margin-top: 70px;
+}
+
+.movie_list {
+    padding : 0 3rem 3rem 3rem ;
+    margin-top: calc(8vh + 32px)
+
+}
+
+.list_title {
+    font-size : 1.75rem;
+    margin: 2.5rem;
+}
