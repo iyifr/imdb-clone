@@ -1,11 +1,11 @@
 /*mobile-design*/
 body {
-    margin-top: 1.8rem;
+    margin-top: 1.7rem;
     background: linear-gradient(to right , rgba(23, 40, 58, 0.7), rgba(11, 51, 92, 0.2)) ;
 }
 
 .home {
-    margin-top: calc(8vh + 18px);
+    margin-top: calc(8vh + 16px);
     height: 470px;
 }
 
