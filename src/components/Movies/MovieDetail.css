@@ -4,6 +4,7 @@
     display: flex;
     flex-direction:column;
     align-items: center;
+    margin-top: 10vh;
 }
 
 .movie__intro {
@@ -50,7 +51,7 @@
 
 .movie__name {
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 3.2rem;
 }
 
 .movie__voteCount {
@@ -111,7 +112,7 @@
 }
 
 .movie__homeButton {
-    background-color:rgb(255, 0, 0);
+    background-color:rgb(212, 26, 26);
     
 }
 

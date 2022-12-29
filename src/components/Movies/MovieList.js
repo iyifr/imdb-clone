@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Footer from '../Footer/Footer'
-import {Outlet} from 'react-router-dom'
+
 
 
 
@@ -47,7 +47,7 @@ const MovieList = () => {
             )}
             </Row>
             </Container>
-            <Outlet />
+            
         </div>
 
         <Footer />

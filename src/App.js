@@ -14,8 +14,9 @@ function App() {
         <Navbar1 />
         <Routes>
             <Route index element = {<Homepage />}></Route> 
-            <Route path = 'movie/:id'  element = {<MovieDetails />} />
+            <Route path = '/movie/:id'  element = {<MovieDetails />} />
             <Route path = 'movies/:type' element = {<MovieList />} />
+            <Route path = 'movies/:type/movie/:id' element = {<MovieDetails />} />
             <Route path = "/*" element = {
             <main style= {{padding: '1rem', marginTop: '300px'}}>
               <p>There is nothing here!</p>

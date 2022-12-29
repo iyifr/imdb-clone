@@ -7,7 +7,7 @@ const Card= ({movies}) => {
 
 return <>
 
-    <LinkContainer to = {`movie/${movies.id}`} >
+    <LinkContainer exact to = {`movie/${movies.id}`}  >
         <div className = 'Card'>
             <img className= 'card__img' 
             src = {`https://image.tmdb.org/t/p/original${movies?movies.poster_path:''}`}
