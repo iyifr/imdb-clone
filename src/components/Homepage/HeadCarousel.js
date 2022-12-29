@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function Homecarousel({items}) {
   return (
-    <Carousel controls = {false} interval = {2}>
+    <Carousel controls = {false} interval = {5000}>
       {
         items.map(item =>
           <Carousel.Item key ={item.id} >

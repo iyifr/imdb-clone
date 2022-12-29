@@ -1,0 +1,8 @@
+{
+  "files.autoSave": "onWindowChange",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.formatOnSave": true,
+  "reactSnippets.settings.prettierEnabled": true
+}

@@ -13,12 +13,21 @@ function App() {
     <Router> 
         <Navbar1 />
         <Routes>
-          <Route path = '/' element = {<Homepage />} />
-          <Route path = '/movies/:type' element = {<MovieList />} />
-          <Route path = '/movies/:id' element = {<h1> MOVIESSSSS </h1>} />
+            <Route index element = {<Homepage />}></Route> 
+            <Route path = '/movie/:id'  element = {<MovieDetails />} />
+            <Route path = 'movies/:type' element = {<MovieList />} />
+            <Route path = 'movies/:type/movie/:id' element = {<MovieDetails />} />
+            <Route path = "/*" element = {
+            <main style= {{padding: '1rem', marginTop: '300px'}}>
+              <p>There is nothing here!</p>
+            </main> } />
+
+        
+          
         </Routes>
 
     </Router>
+  
   )
 }
 

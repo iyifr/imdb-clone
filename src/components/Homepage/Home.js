@@ -2,6 +2,7 @@ import React, { useState, useEffect} from 'react' ;
 import MovieList from '../Movies/MovieList';
 import Homecarousel from './/HeadCarousel';
 import axios from 'axios';
+import {Outlet} from 'react-router-dom'
 import './/home.css';
 
 
@@ -24,8 +25,8 @@ const HomePage = ()=> {
         <div className= 'home'>
             <Homecarousel items = {movieData}/>
        </div>
-       
         <MovieList/>
+        <Outlet />
         </>
     )
 

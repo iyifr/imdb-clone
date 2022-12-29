@@ -9,6 +9,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Footer from '../Footer/Footer'
 
+
+
+
 const MovieList = () => {
     const [movieList, setMovieList] = useState([])
     const {type} = useParams()
@@ -39,11 +42,12 @@ const MovieList = () => {
             <Container fluid="md">
             <Row className="justify-content-lg-center">
                 {movieList.map(data=> (
-                <Card movies={data} id = {data.id} />
+                <Card movies={data}  key = {data.id} />
                 )
             )}
             </Row>
             </Container>
+            
         </div>
 
         <Footer />
