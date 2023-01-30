@@ -1,6 +1,4 @@
-import React, {useState, useEffect} from 'react'
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
-import 'react-loading-skeleton/dist/skeleton.css';
+import React from 'react'
 import './/card.css';
 import {  LinkContainer }  from 'react-router-bootstrap'
 
@@ -9,7 +7,7 @@ const Card= ({movies}) => {
 
 return <>
 
-    <LinkContainer to = {`movie/${movies.id}`} style = {{textDecoration : 'none' , color : 'white'}} >
+    <LinkContainer exact to = {`movie/${movies.id}`}  >
         <div className = 'Card'>
             <img className= 'card__img' 
             src = {`https://image.tmdb.org/t/p/original${movies?movies.poster_path:''}`}
@@ -20,12 +18,10 @@ return <>
                 </div>
                 <div className = "runtime">{movies?movies.release_date:''}
                 </div>
-                <div className = 'description'>{movies?movies.overview.slice(0,118)+'...':''}</div>
+                <div className = 'description'>{movies?movies.overview.slice(0,118)+'...':''}  </div>
             </div>
         </div>
     </LinkContainer>
-
-
 </>
 
 }
